@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dashboard de rendimiento para influencer fitness con foco en comisiones, conversiones y retorno por plataforma."
+    />
+    <title>Dashboard Fitness Ads | Vista Ejecutiva</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-white via-zinc-50 to-zinc-100 text-zinc-900 antialiased">
+    <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
+      <div class="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-emerald-200/40 blur-3xl"></div>
+      <div class="absolute top-44 -right-16 h-64 w-64 rounded-full bg-cyan-200/35 blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-lime-200/30 blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto flex min-h-screen w-full max-w-7xl flex-col lg:flex-row">
+      <aside
+        class="w-full border-b border-zinc-200/70 bg-white/70 p-5 backdrop-blur lg:w-80 lg:border-r lg:border-b-0"
+        aria-label="Navegacion lateral"
+      >
+        <div class="mb-6 flex items-center gap-3">
+          <div class="grid h-11 w-11 place-content-center rounded-2xl bg-black text-white shadow-lg shadow-black/20">
+            <span class="text-sm font-bold">SF</span>
+          </div>
+          <div>
+            <p class="text-xs uppercase tracking-[0.18em] text-zinc-500">Crossfit Creator</p>
+            <h1 class="text-lg font-semibold">Sue Fitness Metrics</h1>
+          </div>
+        </div>
+
+        <section
+          itemscope
+          itemtype="https://schema.org/Person"
+          aria-labelledby="perfil-heading"
+          class="rounded-2xl border border-zinc-200/80 bg-white/80 p-4 shadow-sm"
+        >
+          <h2 id="perfil-heading" class="text-sm font-semibold text-zinc-700">Perfil</h2>
+          <p itemprop="jobTitle" class="mt-2 text-sm text-zinc-600">Influencer fitness y crossfit</p>
+          <p class="mt-2 text-sm text-zinc-600">
+            Marcas objetivo:
+            <span itemprop="affiliation" class="font-medium text-zinc-900">Reebok, NoBull, Nike</span>
+          </p>
+          <p class="mt-2 text-sm text-zinc-600">Modelo de comision: <strong>15%</strong> por venta.</p>
+        </section>
+
+        <nav aria-label="Secciones del dashboard" class="mt-6 space-y-2">
+          <a href="#bloque-1" class="block rounded-xl border border-zinc-200/70 bg-white/70 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-white">
+            Bloque 1 · KPIs
+          </a>
+          <a href="#bloque-2" class="block rounded-xl border border-zinc-200/70 bg-white/70 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-white">
+            Bloque 2 · Drivers
+          </a>
+          <a href="#bloque-3" class="block rounded-xl border border-zinc-200/70 bg-white/70 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-white">
+            Bloque 3 · Operacional
+          </a>
+        </nav>
+      </aside>
+
+      <div class="flex-1 p-4 sm:p-6 lg:p-8" itemscope itemtype="https://schema.org/Dataset">
+        <header class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm backdrop-blur sm:p-6" aria-labelledby="page-title">
+          <p class="text-xs uppercase tracking-[0.2em] text-zinc-500">Landing de analitica</p>
+          <h2 id="page-title" itemprop="name" class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+            Dashboard de Conversion y Comisiones
+          </h2>
+          <p itemprop="description" class="mt-3 max-w-3xl text-sm leading-relaxed text-zinc-600 sm:text-base">
+            Vista ejecutiva para tomar decisiones rapidas sobre ingresos, conversiones, retorno por plataforma y rendimiento por producto en redes sociales.
+          </p>
+
+          <div class="mt-5 grid gap-3 sm:grid-cols-3" aria-label="Resumen rapido">
+            <article class="rounded-2xl border border-emerald-200/80 bg-emerald-50/70 p-3">
+              <p class="text-xs uppercase tracking-wider text-emerald-700">Meta mensual</p>
+              <p class="mt-1 text-lg font-semibold text-emerald-900">Escalar ROI total</p>
+            </article>
+            <article class="rounded-2xl border border-cyan-200/80 bg-cyan-50/70 p-3">
+              <p class="text-xs uppercase tracking-wider text-cyan-700">Estado</p>
+              <p class="mt-1 text-lg font-semibold text-cyan-900">Monitoreo activo</p>
+            </article>
+            <article class="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-3">
+              <p class="text-xs uppercase tracking-wider text-amber-700">Atencion</p>
+              <p class="mt-1 text-lg font-semibold text-amber-900">Vigilar variaciones</p>
+            </article>
+          </div>
+        </header>
+
+        <main class="mt-6 space-y-6" aria-label="Contenido principal del dashboard">
+          <section
+            id="bloque-1"
+            aria-labelledby="bloque-1-heading"
+            class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
+          >
+            <div class="flex items-center justify-between gap-3">
+              <h3 id="bloque-1-heading" class="text-lg font-semibold">Bloque 1 · Indicadores Principales</h3>
+              <span class="rounded-full bg-zinc-900 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase siguiente</span>
+            </div>
+            <p class="mt-3 text-sm text-zinc-600">
+              Aqui se integraran KPIs de volumen, ingresos, engagement, retencion, rendimiento, satisfaccion y eficiencia.
+            </p>
+          </section>
+
+          <section
+            id="bloque-2"
+            aria-labelledby="bloque-2-heading"
+            class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
+          >
+            <div class="flex items-center justify-between gap-3">
+              <h3 id="bloque-2-heading" class="text-lg font-semibold">Bloque 2 · Drivers</h3>
+              <span class="rounded-full bg-zinc-900 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase siguiente</span>
+            </div>
+            <p class="mt-3 text-sm text-zinc-600">
+              Este bloque mostrara funnel, rendimiento por plataforma, calidad de leads, actividad y engagement por canal.
+            </p>
+          </section>
+
+          <section
+            id="bloque-3"
+            aria-labelledby="bloque-3-heading"
+            class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
+          >
+            <div class="flex items-center justify-between gap-3">
+              <h3 id="bloque-3-heading" class="text-lg font-semibold">Bloque 3 · Detalles Operacionales</h3>
+              <span class="rounded-full bg-zinc-900 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase siguiente</span>
+            </div>
+            <p class="mt-3 text-sm text-zinc-600">
+              Aqui iran tablas de productos, plataformas, campanas, alertas y listados de oportunidades de mejora.
+            </p>
+          </section>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
