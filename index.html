@@ -92,13 +92,120 @@
             aria-labelledby="bloque-1-heading"
             class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
           >
-            <div class="flex items-center justify-between gap-3">
+            <div class="flex flex-wrap items-center justify-between gap-3">
               <h3 id="bloque-1-heading" class="text-lg font-semibold">Bloque 1 · Indicadores Principales</h3>
-              <span class="rounded-full bg-zinc-900 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase siguiente</span>
+              <span class="rounded-full bg-emerald-600 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 2 implementada</span>
             </div>
-            <p class="mt-3 text-sm text-zinc-600">
-              Aqui se integraran KPIs de volumen, ingresos, engagement, retencion, rendimiento, satisfaccion y eficiencia.
-            </p>
+
+            <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4" aria-label="KPIs destacados">
+              <article class="rounded-2xl border border-emerald-200/80 bg-emerald-50/80 p-4">
+                <p class="text-xs uppercase tracking-wider text-emerald-700">Comisiones generadas</p>
+                <p class="mt-1 text-2xl font-bold text-emerald-900">€2,970</p>
+                <p class="mt-1 text-xs text-emerald-700">+18% vs mes anterior</p>
+              </article>
+              <article class="rounded-2xl border border-cyan-200/80 bg-cyan-50/80 p-4">
+                <p class="text-xs uppercase tracking-wider text-cyan-700">Revenue total ventas</p>
+                <p class="mt-1 text-2xl font-bold text-cyan-900">€19,800</p>
+                <p class="mt-1 text-xs text-cyan-700">132 ventas netas en 30 dias</p>
+              </article>
+              <article class="rounded-2xl border border-zinc-200/90 bg-white/90 p-4">
+                <p class="text-xs uppercase tracking-wider text-zinc-600">CTR promedio</p>
+                <p class="mt-1 text-2xl font-bold text-zinc-900">4.9%</p>
+                <p class="mt-1 text-xs text-zinc-600">Objetivo 4.2% superado</p>
+              </article>
+              <article class="rounded-2xl border border-amber-200/80 bg-amber-50/80 p-4">
+                <p class="text-xs uppercase tracking-wider text-amber-700">Alerta churn</p>
+                <p class="mt-1 text-2xl font-bold text-amber-900">3.4%</p>
+                <p class="mt-1 text-xs text-amber-800">Ojo: subio +0.9pp semanal</p>
+              </article>
+            </div>
+
+            <div class="mt-4 grid gap-4 lg:grid-cols-3" aria-label="Charts de KPIs">
+              <article class="rounded-2xl border border-zinc-200/80 bg-white/90 p-4">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-sm font-semibold text-zinc-800">Mix de comisiones por producto</h4>
+                  <span class="rounded-full bg-black px-2 py-1 text-[10px] font-semibold uppercase tracking-wider text-white">A-B-C</span>
+                </div>
+                <div class="mt-4 flex h-4 overflow-hidden rounded-full border border-zinc-200" role="img" aria-label="Distribucion de comisiones por producto">
+                  <span class="h-full bg-emerald-500" style="width: 22%"></span>
+                  <span class="h-full bg-cyan-500" style="width: 46%"></span>
+                  <span class="h-full bg-zinc-900" style="width: 32%"></span>
+                </div>
+                <ul class="mt-3 space-y-1 text-xs text-zinc-700">
+                  <li>Producto A (€50): €653 (22%)</li>
+                  <li>Producto B (€120): €1,366 (46%)</li>
+                  <li>Producto C (€80): €951 (32%)</li>
+                </ul>
+              </article>
+
+              <article class="rounded-2xl border border-zinc-200/80 bg-white/90 p-4">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-sm font-semibold text-zinc-800">Embudo conversion</h4>
+                  <span class="text-xs font-medium text-emerald-700">Alcance a venta: 2.2%</span>
+                </div>
+                <div class="mt-4 space-y-2 text-xs font-medium text-zinc-700" role="img" aria-label="Embudo de conversion">
+                  <div class="rounded-xl bg-zinc-100 p-2">
+                    <div class="h-3 rounded-full bg-zinc-900" style="width: 100%"></div>
+                    <p class="mt-1">Alcance: 485K</p>
+                  </div>
+                  <div class="rounded-xl bg-zinc-100 p-2">
+                    <div class="h-3 rounded-full bg-cyan-600" style="width: 21%"></div>
+                    <p class="mt-1">Clics: 102K</p>
+                  </div>
+                  <div class="rounded-xl bg-zinc-100 p-2">
+                    <div class="h-3 rounded-full bg-emerald-600" style="width: 9%"></div>
+                    <p class="mt-1">Leads: 43K</p>
+                  </div>
+                  <div class="rounded-xl bg-zinc-100 p-2">
+                    <div class="h-3 rounded-full bg-amber-500" style="width: 2.2%"></div>
+                    <p class="mt-1">Ventas: 10.7K</p>
+                  </div>
+                </div>
+              </article>
+
+              <article class="rounded-2xl border border-zinc-200/80 bg-white/90 p-4">
+                <div class="flex items-center justify-between">
+                  <h4 class="text-sm font-semibold text-zinc-800">Eficiencia global</h4>
+                  <span class="text-xs font-medium text-cyan-700">ROI 2.8x</span>
+                </div>
+                <div class="mt-4 flex items-center justify-center">
+                  <div
+                    class="grid h-36 w-36 place-content-center rounded-full"
+                    style="background: conic-gradient(#16a34a 0deg 262deg, #e4e4e7 262deg 360deg);"
+                    role="img"
+                    aria-label="Indicador circular de eficiencia en 73 por ciento"
+                  >
+                    <div class="grid h-24 w-24 place-content-center rounded-full bg-white text-center">
+                      <p class="text-xl font-bold text-zinc-900">73%</p>
+                      <p class="text-[11px] uppercase tracking-wider text-zinc-500">eficiencia</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="mt-3 text-center text-xs text-zinc-600">Coste por resultado: €4.10 · Margen: 41%</p>
+              </article>
+            </div>
+
+            <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-3" aria-label="Indicadores complementarios">
+              <article class="rounded-2xl border border-zinc-200/80 bg-white/90 p-4">
+                <p class="text-xs uppercase tracking-wider text-zinc-600">Volumen</p>
+                <p class="mt-2 text-sm text-zinc-700">Ventas: <strong>132</strong> · Usuarios activos: <strong>24,480</strong> · Impresiones: <strong>1.2M</strong></p>
+              </article>
+              <article class="rounded-2xl border border-zinc-200/80 bg-white/90 p-4">
+                <p class="text-xs uppercase tracking-wider text-zinc-600">Engagement y conversion</p>
+                <p class="mt-2 text-sm text-zinc-700">Engagement rate: <strong>6.8%</strong> · Interacciones: <strong>83K</strong> · Conversion: <strong>2.2%</strong></p>
+              </article>
+              <article class="rounded-2xl border border-zinc-200/80 bg-white/90 p-4">
+                <p class="text-xs uppercase tracking-wider text-zinc-600">Satisfaccion y retencion</p>
+                <p class="mt-2 text-sm text-zinc-700">NPS: <strong>52</strong> · CSAT: <strong>91%</strong> · Permanencia media: <strong>6.1 meses</strong></p>
+              </article>
+            </div>
+
+            <div class="mt-4 rounded-2xl border border-rose-200/80 bg-rose-50/80 p-4" role="status" aria-live="polite">
+              <p class="text-xs uppercase tracking-wider text-rose-700">Alerta de seguimiento</p>
+              <p class="mt-1 text-sm text-rose-800">
+                Conversion en TikTok cayo de 3.1% a 2.4% en 5 dias. Recomendado: ajustar creatividad y CTA en anuncios de Producto C.
+              </p>
+            </div>
           </section>
 
           <section
