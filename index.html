@@ -10,78 +10,110 @@
     <title>Dashboard Fitness Ads | Vista Ejecutiva</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="min-h-screen bg-gradient-to-br from-white via-zinc-50 to-zinc-100 text-zinc-900 antialiased">
+  <body class="min-h-screen bg-gradient-to-br from-rose-50 via-sky-50 to-emerald-50 text-slate-800 antialiased">
     <div class="absolute inset-0 -z-10 overflow-hidden" aria-hidden="true">
-      <div class="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-emerald-200/40 blur-3xl"></div>
-      <div class="absolute top-44 -right-16 h-64 w-64 rounded-full bg-cyan-200/35 blur-3xl"></div>
-      <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-lime-200/30 blur-3xl"></div>
+      <div class="absolute -top-16 -left-16 h-56 w-56 rounded-full bg-rose-200/45 blur-3xl"></div>
+      <div class="absolute top-44 -right-16 h-64 w-64 rounded-full bg-sky-200/45 blur-3xl"></div>
+      <div class="absolute bottom-0 left-1/3 h-72 w-72 rounded-full bg-emerald-200/35 blur-3xl"></div>
     </div>
 
     <div class="mx-auto flex min-h-screen w-full max-w-7xl flex-col lg:flex-row">
       <aside
-        class="w-full border-b border-zinc-200/70 bg-white/70 p-5 backdrop-blur lg:w-80 lg:border-r lg:border-b-0"
+        class="w-full border-b border-slate-200/70 bg-white/75 p-5 backdrop-blur lg:w-80 lg:border-r lg:border-b-0"
         aria-label="Navegacion lateral"
       >
         <div class="mb-6 flex items-center gap-3">
-          <div class="grid h-11 w-11 place-content-center rounded-2xl bg-black text-white shadow-lg shadow-black/20">
+          <div class="grid h-11 w-11 place-content-center rounded-2xl bg-gradient-to-br from-rose-300 to-sky-300 text-slate-900 shadow-lg shadow-rose-200/50">
             <span class="text-sm font-bold">SF</span>
           </div>
           <div>
-            <p class="text-xs uppercase tracking-[0.18em] text-zinc-500">Crossfit Creator</p>
-            <h1 class="text-lg font-semibold">Sue Fitness Metrics</h1>
+            <p class="text-xs uppercase tracking-[0.18em] text-slate-500">Crossfit Creator</p>
+            <h1 class="text-lg font-semibold text-slate-900">Sue Fitness Metrics</h1>
           </div>
+        </div>
+
+        <div class="mb-4 flex items-center gap-2 rounded-2xl border border-rose-100 bg-rose-50/70 p-3 text-xs text-rose-900">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-rose-500">
+            <rect x="3" y="9" width="2" height="6" rx="1"></rect>
+            <rect x="6" y="8" width="2" height="8" rx="1"></rect>
+            <rect x="8" y="11" width="8" height="2" rx="1"></rect>
+            <rect x="16" y="8" width="2" height="8" rx="1"></rect>
+            <rect x="19" y="9" width="2" height="6" rx="1"></rect>
+          </svg>
+          Entrenamiento fuerte, lectura clara: foco en decisiones rapidas.
         </div>
 
         <section
           itemscope
           itemtype="https://schema.org/Person"
           aria-labelledby="perfil-heading"
-          class="rounded-2xl border border-zinc-200/80 bg-white/80 p-4 shadow-sm"
+          class="rounded-2xl border border-slate-200/80 bg-white/85 p-4 shadow-sm"
         >
-          <h2 id="perfil-heading" class="text-sm font-semibold text-zinc-700">Perfil</h2>
-          <p itemprop="jobTitle" class="mt-2 text-sm text-zinc-600">Influencer fitness y crossfit</p>
-          <p class="mt-2 text-sm text-zinc-600">
+          <h2 id="perfil-heading" class="text-sm font-semibold text-slate-700">Perfil</h2>
+          <p itemprop="jobTitle" class="mt-2 text-sm text-slate-600">Influencer fitness y crossfit</p>
+          <p class="mt-2 text-sm text-slate-600">
             Marcas objetivo:
-            <span itemprop="affiliation" class="font-medium text-zinc-900">Reebok, NoBull, Nike</span>
+            <span itemprop="affiliation" class="font-medium text-slate-900">Reebok, NoBull, Nike</span>
           </p>
-          <p class="mt-2 text-sm text-zinc-600">Modelo de comision: <strong>15%</strong> por venta.</p>
+          <p class="mt-2 text-sm text-slate-600">Modelo de comision: <strong>15%</strong> por venta.</p>
         </section>
 
         <nav aria-label="Secciones del dashboard" class="mt-6 space-y-2">
-          <a href="#bloque-1" class="block rounded-xl border border-zinc-200/70 bg-white/70 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-white">
+          <a href="#bloque-1" class="block rounded-xl border border-slate-200/70 bg-white/75 px-3 py-2 text-sm font-medium text-slate-700 hover:border-rose-200 hover:bg-rose-50/70">
             Bloque 1 · KPIs
           </a>
-          <a href="#bloque-2" class="block rounded-xl border border-zinc-200/70 bg-white/70 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-white">
+          <a href="#bloque-2" class="block rounded-xl border border-slate-200/70 bg-white/75 px-3 py-2 text-sm font-medium text-slate-700 hover:border-sky-200 hover:bg-sky-50/70">
             Bloque 2 · Drivers
           </a>
-          <a href="#bloque-3" class="block rounded-xl border border-zinc-200/70 bg-white/70 px-3 py-2 text-sm font-medium text-zinc-700 hover:bg-white">
+          <a href="#bloque-3" class="block rounded-xl border border-slate-200/70 bg-white/75 px-3 py-2 text-sm font-medium text-slate-700 hover:border-emerald-200 hover:bg-emerald-50/70">
             Bloque 3 · Operacional
           </a>
         </nav>
       </aside>
 
       <div class="flex-1 p-4 sm:p-6 lg:p-8" itemscope itemtype="https://schema.org/Dataset">
-        <header class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm backdrop-blur sm:p-6" aria-labelledby="page-title">
-          <p class="text-xs uppercase tracking-[0.2em] text-zinc-500">Landing de analitica</p>
-          <h2 id="page-title" itemprop="name" class="mt-2 text-2xl font-bold tracking-tight sm:text-3xl">
+        <header class="rounded-3xl border border-slate-200/80 bg-white/85 p-5 shadow-sm backdrop-blur sm:p-6" aria-labelledby="page-title">
+          <p class="text-xs uppercase tracking-[0.2em] text-slate-500">Landing de analitica</p>
+          <h2 id="page-title" itemprop="name" class="mt-2 text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
             Dashboard de Conversion y Comisiones
           </h2>
-          <p itemprop="description" class="mt-3 max-w-3xl text-sm leading-relaxed text-zinc-600 sm:text-base">
+          <p itemprop="description" class="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 sm:text-base">
             Vista ejecutiva para tomar decisiones rapidas sobre ingresos, conversiones, retorno por plataforma y rendimiento por producto en redes sociales.
           </p>
 
+          <div class="mt-4 flex flex-wrap gap-2" aria-label="Etiquetas de contexto deportivo">
+            <span class="inline-flex items-center gap-2 rounded-full border border-rose-200 bg-rose-50/80 px-3 py-1 text-xs font-semibold text-rose-800">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-rose-500">
+                <rect x="3" y="9" width="2" height="6" rx="1"></rect><rect x="6" y="8" width="2" height="8" rx="1"></rect><rect x="8" y="11" width="8" height="2" rx="1"></rect><rect x="16" y="8" width="2" height="8" rx="1"></rect><rect x="19" y="9" width="2" height="6" rx="1"></rect>
+              </svg>
+              Fuerza
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-sky-200 bg-sky-50/80 px-3 py-1 text-xs font-semibold text-sky-800">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-sky-500">
+                <path d="M5 4h2v6h10V4h2v16h-2v-6H7v6H5z"></path>
+              </svg>
+              Rendimiento
+            </span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50/80 px-3 py-1 text-xs font-semibold text-emerald-800">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="h-4 w-4 fill-emerald-500">
+                <path d="M12 2l2.5 5.1L20 8l-4 3.9.9 5.6L12 15l-4.9 2.5.9-5.6L4 8l5.5-.9z"></path>
+              </svg>
+              Progreso
+            </span>
+          </div>
+
           <div class="mt-5 grid gap-3 sm:grid-cols-3" aria-label="Resumen rapido">
+            <article class="rounded-2xl border border-rose-200/80 bg-rose-50/70 p-3">
+              <p class="text-xs uppercase tracking-wider text-rose-700">Meta mensual</p>
+              <p class="mt-1 text-lg font-semibold text-rose-900">Escalar ROI total</p>
+            </article>
+            <article class="rounded-2xl border border-sky-200/80 bg-sky-50/70 p-3">
+              <p class="text-xs uppercase tracking-wider text-sky-700">Estado</p>
+              <p class="mt-1 text-lg font-semibold text-sky-900">Monitoreo activo</p>
+            </article>
             <article class="rounded-2xl border border-emerald-200/80 bg-emerald-50/70 p-3">
-              <p class="text-xs uppercase tracking-wider text-emerald-700">Meta mensual</p>
-              <p class="mt-1 text-lg font-semibold text-emerald-900">Escalar ROI total</p>
-            </article>
-            <article class="rounded-2xl border border-cyan-200/80 bg-cyan-50/70 p-3">
-              <p class="text-xs uppercase tracking-wider text-cyan-700">Estado</p>
-              <p class="mt-1 text-lg font-semibold text-cyan-900">Monitoreo activo</p>
-            </article>
-            <article class="rounded-2xl border border-amber-200/80 bg-amber-50/70 p-3">
-              <p class="text-xs uppercase tracking-wider text-amber-700">Atencion</p>
-              <p class="mt-1 text-lg font-semibold text-amber-900">Vigilar variaciones</p>
+              <p class="text-xs uppercase tracking-wider text-emerald-700">Atencion</p>
+              <p class="mt-1 text-lg font-semibold text-emerald-900">Vigilar variaciones</p>
             </article>
           </div>
         </header>
@@ -90,11 +122,14 @@
           <section
             id="bloque-1"
             aria-labelledby="bloque-1-heading"
-            class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
+            class="rounded-3xl border border-slate-200/80 bg-white/85 p-5 shadow-sm sm:p-6"
           >
             <div class="flex flex-wrap items-center justify-between gap-3">
-              <h3 id="bloque-1-heading" class="text-lg font-semibold">Bloque 1 · Indicadores Principales</h3>
-              <span class="rounded-full bg-emerald-600 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 2 implementada</span>
+              <h3 id="bloque-1-heading" class="inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-rose-500"><path d="M3 20h18v-2H3zm2-4h3V8H5zm5 0h3V4h-3zm5 0h3v-6h-3z"></path></svg>
+                Bloque 1 · Indicadores Principales
+              </h3>
+              <span class="rounded-full bg-rose-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 2 implementada</span>
             </div>
 
             <div class="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4" aria-label="KPIs destacados">
@@ -211,11 +246,14 @@
           <section
             id="bloque-2"
             aria-labelledby="bloque-2-heading"
-            class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
+            class="rounded-3xl border border-slate-200/80 bg-white/85 p-5 shadow-sm sm:p-6"
           >
             <div class="flex flex-wrap items-center justify-between gap-3">
-              <h3 id="bloque-2-heading" class="text-lg font-semibold">Bloque 2 · Drivers</h3>
-              <span class="rounded-full bg-emerald-600 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 3 implementada</span>
+              <h3 id="bloque-2-heading" class="inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-sky-500"><path d="M4 19h16v-2H4zm1-3l3-4 3 2 4-6 4 8H5z"></path></svg>
+                Bloque 2 · Drivers
+              </h3>
+              <span class="rounded-full bg-sky-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 3 implementada</span>
             </div>
 
             <div class="mt-4 grid gap-4 lg:grid-cols-2" aria-label="Drivers clave del resultado">
@@ -311,11 +349,14 @@
           <section
             id="bloque-3"
             aria-labelledby="bloque-3-heading"
-            class="rounded-3xl border border-zinc-200/80 bg-white/80 p-5 shadow-sm sm:p-6"
+            class="rounded-3xl border border-slate-200/80 bg-white/85 p-5 shadow-sm sm:p-6"
           >
             <div class="flex flex-wrap items-center justify-between gap-3">
-              <h3 id="bloque-3-heading" class="text-lg font-semibold">Bloque 3 · Detalles Operacionales</h3>
-              <span class="rounded-full bg-emerald-600 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 4 implementada</span>
+              <h3 id="bloque-3-heading" class="inline-flex items-center gap-2 text-lg font-semibold text-slate-900">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="h-5 w-5 fill-emerald-500"><path d="M4 5h16v14H4zm2 2v2h12V7zm0 4v2h7v-2zm0 4v2h9v-2z"></path></svg>
+                Bloque 3 · Detalles Operacionales
+              </h3>
+              <span class="rounded-full bg-emerald-500 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white">Fase 4 implementada</span>
             </div>
 
             <div class="mt-4 flex flex-wrap gap-2" aria-label="Filtros operacionales visuales">
